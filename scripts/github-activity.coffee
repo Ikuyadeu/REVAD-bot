@@ -7,7 +7,6 @@
 # 
 # Configuration:
 #   HUBOT_GITHUB_TOKEN
-#   HUBOT_GITHUB_USER
 #   HUBOT_GITHUB_API
 #
 # Commands:
@@ -41,3 +40,5 @@ module.exports = (robot) ->
             d = new Date(Date.parse(c.commit.committer.date)).toFormat("DD/MM HH24:MI")
             msg.send "[#{d} -> #{c.commit.committer.name}] #{c.commit.message}"
             send -= 1
+
+""
